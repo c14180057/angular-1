@@ -14,3 +14,29 @@
  <div *ngFor="let fruit of item;let i=index">
     {{i+1}}. {{fruit.nama}} = {{fruit.harga | currency}}
  </div>
+
+ <div *ngFor="let list of list">
+   {{list}}
+ </div>
+ <p *ngFor="let coba of list">{{coba}}</p>
+
+ <!-- <p *ngIf="show">Show this only if "show" is true</p> -->
+
+ <ng-template
+*ngIf="show;then showBlock;else notShowBlock">
+ </ng-template>
+
+ <ng-template #showBlock>
+   <p>
+    Show this only if "show" is true
+     </p>
+ </ng-template>
+
+  <ng-template #notShowBlock>
+   <p>
+    Show this only if "show" is false
+     </p>
+ </ng-template>
+
+ <button (click)="onSave()">Save</button>
+ {{Pesan}}

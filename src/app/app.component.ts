@@ -10,4 +10,11 @@ export class AppComponent  {
   item=[{nama : 'Kelengkeng',
   harga : 50000
   },{nama:'Jeruk',harga:30000}];
+  list=[1,2,3,4]
+  show:boolean=false;
+  Pesan=''
+  onSave()
+  {
+    this.Pesan='Tombol Baru Ditekan';
+  }
 }
